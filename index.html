@@ -1,201 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <!-- Thank you for visiting my web page
-    I hope you enjoy what I've created. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Levi Koskan" content="My personal Website">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Email obfuscator script 2.1 by Tim Williams, University of Arizona
+    Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+    This code is freeware provided these four comment lines remain intact
+    A wizard to generate this code is at http://www.jottings.com/obfuscator/ -->
+  <title>Levi Koskan</title>
 
-    <title>Levi Koskan</title>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./public/style.css">
+</head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Alegreya:400,900' rel='stylesheet' type='text/css'>
-    <link href="style.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbarClr navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <p id ="brand"> Work Harder, <br>
-                Be Better</p>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="https://github.com/levikoskan"><img class="navIcon" src="img/github.png" alt=""></a></li>
-                <li><a href="https://linkedin.com/in/levikoskan"><img class="navIcon" src="img/linkedin-logo.png" alt=""></a></li>
-                <li><a href="https://about.me/levikoskan"><img class="navIcon" src="img/aboutMe.png" alt=""></a></li>
-                <li> <button class="navBtn" type="button" data-toggle="modal"
-                      data-target="#contact">Contact Me</button>
-                </li>
-                <li> <button class="navBtn" type="button" data-toggle="modal"
-                      data-target="#resume">Resume</button>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-
-      <!-- Contact ME Modal -->
-      <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div id="contactBody" class="modal-body">
-                <p>Phone: <span class='contactInfo'> </span></p>
-                <p>Email: <span class='contactInfo'> </span></p>
-            </div>
-            <div class="modal-footer">
-              <!-- <div id="handShake">
-                <iframe src="http://giphy.com/gifs/xr7GE8l07Zw2Y/html5" style=' width: 142px'>   </iframe>
-              </div> -->
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Resume Modal -->
-      <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="resumeLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div id="resumePic" class="modal-body">
-
-                <img id="resumePic" src="img/resume.jpg" alt="">
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <div class="container">
-            <div class="carousel-caption">
-
-              <h1>Levi Koskan</h1>
-                <div class="row">
-                  <div class="col-md-7">
-                    <div><img class ="carImg" id="levi" src="img/happyLevi.jpg" alt=""></div>
-                  </div>
-                  <div class="col-md-5">
-                    <h3>Hello, Friend</h3>
-                    <p>Welcome to my corner of the web. I am a passionate web developer and I hope you enjoy this site as much as I did while making it. Cheers!</p>
-                  </div>
-                </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Levi Koskan</h1>
-
-              <div id="pitchBox">
-                <p id="pitchText">I love solving problems, and I love self-improvement. Technology is the perfect combination of these two passions. Technology solves problems and helps humans improve their lives. I became a web developer to create applications with fantastic technologies that empower people to accomplish more.</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="container">
-            <div class="carousel-caption">
-
-
-                <!-- Results -->
-                <div id="results"><h1 style="margin-top: -250px">Random Giphy For Fun</h1></div>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    <div class="container">
-
-
-      <div class="row" id="animate">
-        <div id="proXp" class="col-md-7" >
-          <h2>Projects and Experience</h2>
-          <h4>SlackOverFlow</h4>
-            <p>A forum for GA students to post questions and receive answers in a interactive atmosphere. Integrated third party API’s for user authorization and user response capabilities. This web app has the ability to update dynamically while giving a visual indication to questions posted in the last 30 minutes. Main features include;  Data Base Organization, User Validation, Question Log with time stamp updated dynamically, Ease for User to respond to a question.
-            </p>
-          <h4>Lowe’s Digital Challenge</h4>
-            <p>With a team of fellow GA alumni, I participated in a weekend Digital challenge sponsored by Lowe’s. Teams were given the task to design a web app targeted for the mobile market to empower home owners  and allow them to take pride in the home. My team and I decided to create a game for young children to young to help out with DIY projects. We made a simple 2D building simulator that kids will have fun playing in order for parents to involve the whole family.
-            </p>
-        </div>
-        <div class="col-md-5">
-          <img id="proPic"src="img/goodLookin.jpg" alt="">
-        </div>
-      </div>
-
-      <hr id="midDivider"class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">About <span class="text-muted">Me</span></h2>
-          <h4>In a nut shell</h4>
-          <p class="lead">I believe in constant, perpetual and non-stop self-improvement. I aspire to always contribute in a meaningful way to any team or situation I’m involved with. I believe that relationships are more important than worldy objects. I enjoy challenges. Fake it till you make, it works. Don’t tell me your goals if you don’t want me to constantly make sure your on track to reach them. </p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img id="sunPic" src="img/sunSet.jpg" alt="">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>"Success isn't owned, it's leased. And rent is due every day." - J.J.Watt</p>
-      </footer>
-
-    </div>
-
-
-
-
-
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-  <script src="script.js" type="text/javascript"></script>
+<body>
+  <div id="appWrapper">
+    <div id="app"></div>
+  </div>
+  <script type="text/javascript" src="bundle.js"></script>
 
 </body>
+
 </html>
