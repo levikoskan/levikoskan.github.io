@@ -296,6 +296,9 @@ h1{
   text-decoration: none;
   color: black;
 }
+.projectLink:hover{
+  color: rgba(104, 201, 243, 1);
+}
 .singleProjectImgs{
   height: 300px;
   width: 370px;
