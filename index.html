@@ -1,26 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- start of HEAD SECTION -->
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
   <!-- Email obfuscator script 2.1 by Tim Williams, University of Arizona
     Random encryption key feature by Andrew Moulden, Site Engineering Ltd
     This code is freeware provided these four comment lines remain intact
     A wizard to generate this code is at http://www.jottings.com/obfuscator/ -->
+
   <title>Levi Koskan</title>
 
-<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="./public/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+
+<link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-  <div id="appWrapper">
-    <div id="app"></div>
+<!-- END of head section -->
+
+<!-- START of BODY SECTION -->
+<body id="home">
+<!-- @todo: throw in some API's -->
+  <!-- NAVBAR -->
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home"><img src="./images/leviLogo.png"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navTab"><a class="navTabText" href="#about">About</a></li>
+        <li class="navTab"><a class="navTabText" href="#portfolio">Portfolio</a></li>
+        <li class="navTab"><a class="navTabText" href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- END of NAVBAR -->
+
+<!-- HERO -->
+<!-- @todo: change hamburger menu color  -->
+  <div class="heroPic-container">
+    <div class="heroPic">
+    </div>
   </div>
-  <script type="text/javascript" src="bundle.js"></script>
 
+  <div class="break"></div>
+  <div class="welcom-container">
+    <p class="welcome">Hi,  Im <span class="wordColor">Levi</span></p>
+    <p class="welcome banner">Im <span class="wordColor">passionate</span> about</p>
+    <p class="welcome bannerWords">people, technology and self-improvment</p>
+  </div>
+
+
+<!-- END of HERO -->
+
+<!-- Start of ABOUT -->
+
+<div class="about-container" id="about">
+  <!-- @todo: my story, how am I where I am, what I bring to the table -->
+  <h1>Levi Koskan</h1>
+  <div class="lineBreak"></div>
+  <div class="aboutWords">
+    <p class="aboutHeaders">Be a <span class="wordColor">Kos-Can</span> not a Kos-Can't<p>
+    <p class="aboutLetterHight" id="leviSummary">I’m <span class="wordColor noShade">driven</span> to help solve people’s problems. I believe that technology has limitless potential to change the human condition and improve quality of life for everyone. I look for <span class="wordColor noShade">opportunities</span> to educate, coach, engineer, or advocate tech solutions. It is my hopes that I’ll be able to <span class="wordColor noShade">help</span> people have a better, more efficient, more convenient life.
+    </p>
+    <h4 class="aboutHeaders">Core Principles</h4>
+    <div class="row aboutLetterHight">
+      <div class="col-md-4">
+        <i class="fa fa-cogs fa-5x" aria-hidden="true"></i>
+        <p class="principlesTitle">Work</p>
+        <p> Hard work always pays off. It takes zero talent to give effort. You can't fail if you never give up. Do more than the job description.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-hand-peace-o fa-5x faAdjustmentAttitude" aria-hidden="true"></i>
+        <p class="principlesTitle">Attitude</p>
+        <p>Do onto others, as you would have them do onto you. Fake it till you make it. Don't be an asshole.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-bolt fa-5x faAdjustmentSelf" aria-hidden="true"></i>
+        <p class="principlesTitle">Self-improvement</p>
+        <p>Be a little bit better each day than the day before. What is messured is what gets improved. A goal that's not written down is a wish.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END of ABOUT -->
+
+<!-- Start of Experience -->
+<!-- @todo: put in pictures next to discriptions and as user scrolls little dot trails scroll to the next experience -->
+<!-- <div class="experience-container">
+  <h2 class="sectionTitle">My Experience So Far</h2>
+  <div class="job-container-right">
+    <div class="jobDescription">
+      <p class="companyTitle"> General Assembly <p>
+      <p>For 12 weeks I enjoyed putting in 60+ hours a week to become a full stack web developer. From the basics of JavaScript to Rails sugar, I built real websites, APIs, and data-drive apps while collaborating with classmates on a range of projects. I understand how to set up a development environment, work efficiently as a developer, and make a project a success.</p>
+    </div>
+  </div>
+
+  <div class="job-container-left">
+    <div class="jobDescription">
+      <p class="companyTitle"> Professional Mortgage, Inc.<p>
+      <p> I helped clients achieve their goals and needs with the most competitive  and flexible mortgage programs and rates. I helped educate and navigate clients through the advantages and disadvantages of each mortgage program. Informed clients on rates and how they affect payments and closing costs, as well as give support and energy to the home loan process. </p>
+    </div>
+  </div>
+
+  <div class="job-container-right">
+    <div class="jobDescription">
+      <p class="companyTitle"> ClearSpring Loan Services <p>
+      <p>I enjoyed talking with a range of individuals on a daily basis and being a positive presence in a hard situation. With the use of developed communication skills I tactfully negotiated a path of resolution to have under performing assets put back on track. This included communication with investors and securing new paper work for borrowers to fill out. I tracked the paperwork process and kept borrowers as well as investors updated on changes. </p>
+    </div>
+  </div>
+
+  <div class="job-container-left">
+    <div class="jobDescription">
+      <p class="companyTitle"> Utah State University Football Team <p>
+      <p> Joined the university football team as a walk on and after two years was awarded the Hod and Clover Sanders athletic scholarship. I learned what grit, dedication, honesty, hard work and sacrifice were. I was voted to the team leadership council my junior and senior year. I was nominated for two national awards for my character and contribution to the team as a walk on. I received WAC conference honors my final year and was honored with most improved player by my team after returning from a torn ACL injury. </p>
+    </div>
+  </div>
+</div>
+ -->
+<!-- END of Experience -->
+
+<!-- Start of projects -->
+
+<div class="projectSection-container" id="portfolio">
+  <h3 class="sectionTitle">Portfolio</h3>
+
+  <div class="project-container">
+    <button class="project" data-toggle="modal" data-target="#propModal">
+      <img src="./images/projects/propHomeLogo.png" alt="">
+      <p>Predict the future appreciation of a residential property.</p>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="propModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Property Predictor</h4>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <!-- carousel half -->
+              <div class="col-md-8">
+                <div id="carouselProp" class="carousel slide" data-ride="carousel">
+
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselProp" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselProp" data-slide-to="1"></li>
+                    <li data-target="#carouselProp" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="modalPic" src="./images/projects/propPredictorHomePic.png" alt="...">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="modalPic" src="./images/projects/propPredictorResults.png" alt="...">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="modalPic" src="./images/projects/propPredictorDis.png" alt="...">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carouselProp" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carouselProp" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+
+
+
+              <!-- information stuff -->
+              <div class="col-md-4">
+                <div class="projectInfo-container">
+                  <a href="https://propertypredictor.herokuapp.com/#/?_k=u1t1hw">propertypredictor.herokuapp.com</a>
+                  <p class="techUsedTitle">Tech Used</p>
+                  <ul class="techList-container">
+                    <li class="techList">HTML/CSS</li>
+                    <li class="techList">Node.js</li>
+                    <li class="techList">React</li>
+                    <li class="techList">Flux</li>
+                    <li class="techList">Ajax</li>
+                    <li class="techList">Austin API</li>
+                  </ul>
+                  <div>
+                    <p> The goal of my application is to give potential homeowners another tool that will help them make the right home purchase. It will help them by taking in data that has shown to affect appreciation in the past and compute that data to give a potential homeowner an easily digestible number. The number represents the likelihood of that property appreciating in the short to mid future. Hopefully this helps potential homeowners put aside fears of financial lose when deciding on a home purchase.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- END OF PROP PROJECT -->
+     <!-- TODO PROJECT -->
+     <button class="project" data-toggle="modal" data-target="#todoModal">
+      <img src="./images/projects/toDoLogo.png" alt="">
+      <p>A fun retro styled to-do list creator</p>
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="todoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Eight-bit To-Do</h4>
+          </div>
+          <div class="modal-body">
+
+            <div class="row">
+              <!-- carousel half -->
+              <div class="col-md-8">
+                <div id="carouselToDo" class="carousel slide" data-ride="carousel">
+
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselToDo" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselToDo" data-slide-to="1"></li>
+                    <li data-target="#carouselToDo" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="modalPic" src="./images/projects/toDoLogin.png" alt="...">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="modalPic" src="./images/projects/toDoHome.png" alt="...">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="modalPic" src="./images/projects/toDoList.png" alt="...">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carouselToDo" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carouselToDo" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+
+
+
+              <!-- information stuff -->
+              <div class="col-md-4">
+                <div class="projectInfo-container">
+                  <a href="https://eight-bit-to-do.herokuapp.com/">eight-bit-to-do.herokuapp.com</a>
+                  <p class="techUsedTitle">Tech Used</p>
+                  <ul class="techList-container">
+                    <li class="techList">HTML/CSS</li>
+                    <li class="techList">Bootstrap</li>
+                    <li class="techList">jQuery</li>
+                    <li class="techList">Node.js</li>
+                    <li class="techList">Express</li>
+                    <li class="techList">Mongo DB</li>
+                    <li class="techList">Ajax</li>
+                    <li class="techList">PassPort for User Auth</li>
+                    <li class="techList">Handlebars</li>
+                  </ul>
+                  <div>
+                    <p>The to-do list includes the ability to add multiple lists and multiple tasks on each list. Also, a user could give each task a point value with the expectation of collecting those points once the task was complete. My team and I built out our own API to consume as we decided to make this application single paged. The application has user authentication and persistent data.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END of todo -->
+
+     <button class="project" data-toggle="modal" data-target="#slackModal">
+      <img id="slackImg" src="./images/projects/slackOverflowLogo.png" alt="">
+      <p>Byte sized questons; full stack answers</p>
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="slackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">slackOverflow</h4>
+          </div>
+          <div class="modal-body">
+
+            <div class="row">
+              <!-- carousel half -->
+              <div class="col-md-8">
+                <div id="carouselSlack" class="carousel slide" data-ride="carousel">
+
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselSlack" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselSlack" data-slide-to="1"></li>
+                    <li data-target="#carouselSlack" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="modalPic" src="./images/projects/slackFlowHome.png" alt="...">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="modalPic" src="./images/projects/slackFlowLogin.png" alt="...">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="modalPic" src="./images/projects/slackFlowQuestion.png" alt="...">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carouselSlack" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carouselSlack" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+
+
+
+              <!-- information stuff -->
+              <div class="col-md-4">
+                <div class="projectInfo-container">
+                  <a href="">Coming Soon</a>
+                  <p class="techUsedTitle">Tech Used</p>
+                  <ul class="techList-container">
+                    <li class="techList">HTML/CSS</li>
+                    <li class="techList">Bootstrap</li>
+                    <li class="techList">Ruby</li>
+                    <li class="techList">Rails</li>
+                    <li class="techList">Devis for User Auth</li>
+                    <li class="techList">Disques API</li>
+                    <li class="techList">PostgreSQL</li>
+
+                  </ul>
+                  <div>
+                    <p>With a team of three other people we created a forum for those in the General Assembly community to post 140 character or less questions and receive answers. This was to be a place where any GA student from any department could ask a question and receive help from alumni, teachers and fellow students. Features include user authentication, question bar to ask a question, updated community questions with timestamp and visual display for questions asked in the last 30 minutes, a section displaying your own questions, and being able to answer a question once you’ve clicked on it</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- END of projects -->
+
+<div class="contact-container" id="contact">
+<!-- @todo: hoop mailto JS to email Icon -->
+<!-- @todo: put space between icons on small screens -->
+  <h2 class="sectionTitle">Contact</h2>
+  <div class="email">
+    <a href="#" id="emailAnchor">
+    <i class="fa fa-envelope" id="emailIcon" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="onlineIcons-container">
+    <div class="onlineIcons">
+      <a href="https://about.me/levikoskan">
+        <img class="icon" src="./images/aboutMe.png">
+      </a>
+      <a href="https://github.com/levikoskan">
+        <img class="icon" src="./images/github.png">
+      </a>
+      <a href="https://www.linkedin.com/in/levikoskan">
+        <img class="icon" src="./images/linkedin.png">
+      </a>
+    </div>
+  </div>
+
+</div>
 </body>
+<!-- END of Body SECTION -->
 
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/1824911b81.js"></script>
+<script type="text/javascript" src="./script.js"></script>
 </html>

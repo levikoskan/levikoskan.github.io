@@ -1,0 +1,345 @@
+@font-face{
+  font-family: "28DaysLater";
+  src: url(./28DaysLater.ttf) format("truetype")
+}
+body{
+  font-family: 'Oswald', sans-serif;
+}
+.navbar{
+  /*@todo: fade in background to  1 opacity once hero page is scrolled through*/
+  margin-bottom: 0px;
+  height: 6em;
+  background-color: rgba(0,0,0,0);
+}
+.navbarAnimation{
+  background-color: black;
+  transition: background-color 1s ease-in;
+}
+.navbarAnimationOff{
+  background-color: rgba(0,0,0,0);
+  transition: background-color 1s ease-in;
+}
+.navTabText{
+  color: white;
+}
+.navbar-toggle{
+  background-color: black;
+  border: 2px solid white;
+}
+.navTab{
+  padding-right: 2em;
+  font-size: 1.5em;
+}
+.icon-bar{
+  background-color: white;
+}
+@media(max-width: 770px){
+.navbar-nav{
+  background-color: rgba(0,0,0,.5);
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+.navTab{
+  padding: 15px 0px;
+  text-align: center;
+}
+}
+@media (max-width: 700px){
+  .navbar{
+    background-color: black;
+  }
+  }
+.heroPic-container{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+.heroPic {
+  height: 100%;
+  width: 70%;
+  background-image: url(./images/heroPic1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+.break {
+  height: 385px;
+  width: 100%;
+  visibility: hidden;
+}
+@media (max-width: 500px){
+  .break{
+    height: 330px;
+  }
+}
+.wordColor{
+  color: #106694;
+  text-shadow: 1px 2px black;
+}
+.noShade{
+  text-shadow: none;
+}
+.welcom-container{
+  margin-bottom: 450px;
+}
+.welcome{
+  text-align: right;
+  width: 87%;
+  font-family: '28DaysLater', cursive;
+  color: white;
+  font-size: 9em;
+  text-shadow: 11px 6px black;
+}
+.banner{
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: -17px;
+  font-size: 4em;
+  text-shadow: 6px 2px black;
+}
+.bannerWords{
+  font-size: 3em;
+  text-shadow: 6px 2px black;
+}
+@media (max-width: 1000px){
+  .heroPic{
+    margin: 0px;
+    width: 100%
+  }
+  .banner, .bannerWords{
+    width: 100%;
+    text-align: center;
+  }
+}
+  /*about section*/
+.about-container{
+  padding: 75px 0px;
+  background-color: white;
+  line-height: 200%;
+}
+h1{
+  text-align: center;
+  padding-bottom: 26px;
+  margin: auto;
+  font-family: '28DaysLater', cursive;
+  font-size: 6em;
+}
+.lineBreak{
+  padding-bottom: 0px;
+  height: 2px;
+  width: 70%;
+  margin: auto;
+  border-radius: 25px;
+  background: #106694;
+}
+.aboutWords{
+  text-align: center;
+  width: 84%;
+  margin: auto;
+}
+.aboutHeaders{
+  padding: 25px 0px;
+  font-size: 2em;
+  font-family: 'Bevan', cursive;
+  line-height: 140%;
+}
+.aboutLetterHight{
+  line-height: 200%;
+}
+#leviSummary{
+  font-size: 1.2em;
+}
+
+.fa{
+  font-size: 50px;
+  color: #106694;
+  border: 5px solid #106694;
+  border-radius: 100px;
+  padding: 25px;
+  background: #fff;
+}
+.faAdjustmentAttitude{
+  padding: 25px 30px;
+}
+.faAdjustmentSelf{
+  padding: 25px 42px;
+}
+.principlesTitle{
+  font-size: 2.25em;
+  color: #106694;
+  margin-top: 10px;
+}
+/*end of about*/
+
+/*start of experience*/
+.experience-container{
+  padding: 75px 0px;
+  background-color: lightblue;
+  display: none;
+}
+.sectionTitle{
+  margin-top: 0px;
+  text-align: center;
+  padding-bottom: 60px;
+  font-size: 2em;
+  font-family: 'Bevan', cursive;
+}
+.companyTitle{
+  font-size: 1.35em;
+  padding-top: 20px;
+}
+.job-container-left{
+  display: flex;
+  padding-left: 30px;
+  justify-content: flex-start;
+}
+.job-container-left .jobDescription{
+  background-color: white;
+}
+.job-container-right{
+  display: flex;
+  padding-right: 30px;
+  justify-content: flex-end;
+}
+.job-container-right .jobDescription{
+  background-color: #106694;
+}
+.jobDescription{
+  text-align: center;
+  background-color: white;
+  width: 75%;
+  box-shadow: 0px 4px 13px 0 #292f33;
+  margin-bottom: 40px;
+  padding: 0px 40px;
+  border-radius: 3px;
+  font-family: 'Bevan', cursive;
+  line-height: 200%;
+}
+@media (max-width: 700px){
+  .job-container-left{
+    padding-left: 0px;
+    justify-content: center;
+}
+  .job-container-right{
+    padding-right: 0px;
+    justify-content: center;
+}
+}
+/*END of experience*/
+
+/*Start of projects*/
+.projectSection-container{
+  background-color: white;
+  margin-top: -20px;
+  padding: 75px 0px;
+  line-height: 200%;
+}
+.project-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.project{
+  background-color: rgba(0,0,0,0);
+  border: none;
+  height: 300px;
+  width: 250px;
+  margin-bottom: 30px;
+}
+#slackImg{
+  height: 50%;
+  width: 50%;
+}
+
+  /*Modal*/
+  .modal-dialog{
+    width:90%;
+  }
+  .modal-header{
+    background-color: #106694;
+    color: white;
+  }
+  .modal-title{
+    font-size: 2em;
+    font-family: 'Bevan', cursive;
+  }
+  .modal-content{
+    text-align: center;
+  }
+  .modalPic{
+    margin: auto;
+    height: 350px !important;
+  }
+  .carousel-inner{
+    height: 350px;
+  }
+  .techUsedTitle{
+    font-size: 1.4em;
+    margin: 10px 0px;
+  }
+  .techList-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  .techList{
+    list-style: none;
+    color: white;
+    background-color: #106694;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .modal-footer{
+    background-color: #106694;
+  }
+  @media (max-width: 700px){
+  .modalPic{
+    height: 280px !important;
+  }
+  .carousel-inner{
+    height: 280px;
+  }
+  }
+
+  /*endo of Modal*/
+/*END of projects*/
+
+/*Start of contact*/
+.contact-container{
+  padding: 75px 0px;
+  background-color: #106694;
+  color: white;
+}
+.email{
+  text-align: center;
+  margin-top: -42px;
+}
+#emailIcon{
+  font-size: 80px;
+  cursor: pointer;
+}
+.onlineIcons-container{
+margin-top: 30px;
+}
+.onlineIcons{
+  display: flex;
+  justify-content: space-around;
+  width: 18%;
+  margin: auto;
+}
+.icon{
+  height: 2em;
+  width: 2em;
+}
+
+@media (max-width: 800px){
+  .onlineIcons{
+    width: 40%;
+  }
+}
+
+/*END of contact*/
